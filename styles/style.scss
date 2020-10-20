@@ -1,0 +1,34 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/button';
+@import 'modules/hero-slider';
+@import 'breakpoints/base';
+@import 'modules/text-animation';
+@import 'modules/image-slide';
+@import 'modules/mobile-menu';
+
+//スマホ用
+@media (min-width: 480px){
+  @import "breakpoints/480up";
+}
+//タブレット用
+@media (min-width: 600px){
+  @import "breakpoints/600up";
+}
+//タブレット・ミニPC用
+@media (min-width: 960px){
+  @import "breakpoints/960up";
+}
+//デスクトップ用
+@media (min-width: 1280px){
+  @import "breakpoints/1280up";
+}
+//レティナディスプレイ用
+@media(min-resolution: 192dpi),
+      (-webkit-min-device-pixcel-ratio: 2){
+        @import "breakpoints/2x";
+}
+//プリンター用
+@media (min-width: 1280px){
+  @import "breakpoints/print";
+}
